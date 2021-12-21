@@ -4,10 +4,8 @@ import style from '../styles/Cart.module.css'
 export default function cart() {
     const [item, setitem] = useState([])
     const [total, settotal] = useState(0)
+
     
-    var count = useRef(0)
-
-
 
     const additems = async () => {
         let itemname = document.getElementById('itemName').value;
@@ -31,34 +29,23 @@ export default function cart() {
         item.length > 0 && item.map((i) => {
             adding = adding + (i['iPrice'] * i['unit']);
         })
-        settotal(adding)
-
-    }
+        settotal(adding) 
+    }   
     
     const addItemUnit = (e,index1) => {
-        
-        
-
-
-
-
-    //     item.map((ele,i)=>{
-    //         if(i==index1){
-
-    //             ele["unit"]=ele['unit']+1
-    //             console.log(item);
-    //         }
-    //     })
-    //     console.log(item,"aft")
-
-    //    setitem(item)
+        let n=[...item]
+        n[index1].unit++
+        setitem(n)
        
     }
     
     console.log(item,'after');
 
-    const minusItemUnit = (e,index) => {
-
+    const minusItemUnit = (e,index1) => {
+        let n=[...item]
+        n[index1].unit>0?
+        n[index1].unit--:0
+        setitem(n)
 
     }
 
