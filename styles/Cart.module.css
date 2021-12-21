@@ -1,0 +1,241 @@
+.navbar{
+    background-color: rgb(5, 3, 3);
+    width: 100vw;
+    height: 10vh;
+    color: rgb(12, 15, 231);
+    padding: 8px 0 0 10px;
+    font-weight: 800;
+}
+
+.navbar_container{
+    background-color: rgb(247, 205, 19);
+    width: 10%;
+   height: 80%;
+   border-radius: 3px;
+   display: flex;
+   justify-content: center;
+   align-items:center ;
+
+}
+.totalCartItemcount{
+    width: 40px;
+    height: 40px;
+    text-align: center; 
+    border-radius: 50px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+   
+    border: 2px solid rgb(233, 130, 19);
+    background-color: rgb(231, 146, 227);
+}
+
+.main_container{
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(255, 254, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+}
+.totalCartItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    width: 15%;
+}
+.totalCartItemtext{
+    background-color: tomato;
+    border-radius: 3px;
+    width: 80%;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+
+.addItem_box{
+
+    padding: 5px;
+    background: rgb(243, 198, 190);
+    display: flex;
+    gap: 10%;
+   
+    justify-content: center;
+    align-items:center;
+    width: 100vw;
+    height: 15%;
+  
+}
+.addItem_box button{
+    border: none;
+    /* outline: rgb(12, 223, 205) solid ; */
+    border-radius: 25px;
+    width: 70px;
+    background-color: rgb(24, 236, 190);
+}
+.addItem_box>form{
+    
+    display: flex;
+    gap: 24px;
+}
+.addItemInput{
+    display: flex;
+    gap: 5px;
+
+}
+.addItemInput>input{
+    border-radius: 5px;
+    padding: 8px;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+}
+.allItembox{
+    display: flex;
+    justify-content: center;
+    width: 100vw ;
+    height: 65%;
+    overflow: scroll;
+    background: rgb(214, 175, 175);
+    
+}
+.allItembox::-webkit-scrollbar{
+    display: none;
+}
+.allItembox ul{
+    list-style-type: none;
+    margin-left: 0; 
+    padding-left: 0;
+}
+.itemslist{
+    padding-top:0.2%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    align-items: center;
+    
+    
+    
+}
+
+
+
+.itemslist>li{
+   
+    gap: 10%;
+    width: 92%;
+    padding-bottom: 1%;
+    display: flex;
+    padding-top: 1%;
+     padding-left: 3%;
+    align-items: center;
+    background-color: rgb(164, 250, 217);
+
+}
+
+.itemDetail{
+    display: flex;
+    gap: 30%;
+    width: 30%;
+}
+
+.itemNameBox{
+    width: 40%;
+
+}
+.totalOfIndividualItem{
+    display: flex;
+    width: 15%;
+}
+.totalOfIndividualItemPrice{
+    margin-left: 3px;
+    padding: 0 5px;
+    background-color: rgb(233, 67, 67);
+    color: rgb(255, 254, 225);
+    width: fit-content;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+.addUnitBtn{
+    display: flex;
+    gap: 4%;
+}
+
+.addUnitBtn button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 60, 255);
+}
+#unitbtnUnit{
+    width: fit-content;
+    /* background: rgb(255, 255, 255); */
+}
+
+
+.delBtn>button{
+    background-color: crimson;
+    color: rgb(248, 248, 248);
+    width: 70px;
+    height: 30px;
+}
+.totalBox{
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    /* gap: 5%; */
+    background: rgb(243, 179, 179);
+}
+
+.totalPriceBox{
+    display: flex;
+    gap: 4%;
+    width: 35%;
+    /* background-color: salmon; */
+    display: flex;
+    /* justify-content: center; */
+    padding: 4%;
+    align-items: center;
+}
+.totalPriceBoxText{
+    /* background-color: steelblue; */
+    width: 30%;
+    font-size: 30px;
+    font-weight: 800    ;
+    text-align: center;
+    border-radius: 10px;
+}
+.totalPriceBoxTotal{
+    background-color: rgb(223, 247, 92);
+    width:fit-content;
+    font-size: 25px;
+    font-weight: 700    ;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+.buybtn{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: seagreen; */
+}
+.buybtn>button{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    width: 30%;
+    font-size: 30px;
+    font-weight: 900;
+}
